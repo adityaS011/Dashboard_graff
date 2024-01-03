@@ -12,7 +12,7 @@ const Sidebar = ({ children }) => {
       <div className='fixed md:w-40 w-16 h-screen bg-gray-900 md:pr-3 border-r-[1px] flex flex-col justify-between'>
         <div className='flex flex-col items-center md:m-3'>
           <Link href='/'>
-            <div className='text-white hidden shrink-0 text-2xl text-bold p-3 rounded-lg '>
+            <div className='text-white hidden md:block shrink-0 text-2xl text-bold p-3 rounded-lg '>
               <img src='https://www.genoshi.io/logo.svg' className='h-8' alt='GRAFF' />
             </div>
           </Link>
