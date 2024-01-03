@@ -9,7 +9,7 @@ const Sidebar = ({ children }) => {
   return (
     <div className='flex'>
       {/* Sidebar */}
-      <div className='fixed md:w-40 w-16 h-screen bg-gray-900 md:pr-3 border-r-[1px] flex flex-col justify-between'>
+      <div className='fixed md:w-40 w-16 min-h-screen bg-gray-900 md:pr-3 border-r-[1px] flex flex-col justify-between'>
         <div className='flex flex-col items-center md:m-3'>
           <Link href='/'>
             <div className='text-white hidden md:block shrink-0 text-2xl text-bold p-3 rounded-lg '>
@@ -43,11 +43,12 @@ const Sidebar = ({ children }) => {
             </div>
           </Link>
           <Link href='/setting'>
-            <div className='text-white cursor-pointer md:w-32 my-4 p-3 rounded-lg flex bg-gradient-to-r w-10 from-blue-700 to-teal-500 hover:from-blue-700 hover:to-teal-400 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>
+            <div className='text-white cursor-pointer  md:w-32 my-4 p-3 rounded-lg flex bg-gradient-to-r w-10 from-blue-700 to-teal-500 hover:from-blue-700 hover:to-teal-400 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>
               <IoSettingsSharp size={22} /> <p className='pl-2 hidden md:block'>Setting</p>
             </div>
           </Link>
         </div>
+        <div className='h-screen'>@</div>
       </div>
 
       {/* Main Content */}

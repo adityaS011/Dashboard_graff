@@ -44,17 +44,18 @@ const Profile = () => {
           </div>
           <ul>
             {data.map((order, id) => (
-              <li key={id} className='bg-gray-50 hover:bg-gray-100 rounded-lg my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'>
-                <div className='flex items-center'>
+              <li key={id} className='bg-gray-50 hover:bg-gray-100 rounded-lg my-3 p-2 grid md:grid-cols-4 grid-cols-2   items-center justify-between cursor-pointer'>
+                <div className='flex items-center '>
                   <div className='bg-purple-100 p-3 rounded-lg'>
                     <BsPersonFill className='text-purple-800' />
                   </div>
-                  <p className='pl-4'>{order.name.first + ' ' + order.name.last}</p>
+                  <p className='pl-4 md:text-sm'>{order.name.first + ' ' }</p>
                 </div>
-                <p className='text-gray-600 sm:text-left text-right'>{order.name.first}@gmail.com</p>
+                <p className='text-gray-600 text-xs md:text-lg pr-2 sm:text-left text-right'>{order.name.last}@gmail.com
+                <button className='mt-2 md:hidden text-white bg-gradient-to-r from-blue-700 to-teal-500 hover:from-blue-700 hover:to-teal-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-large rounded-lg text-xs px-3 py-1.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>Delete</button></p>
                 <p className='hidden md:flex'>{order.date}</p>
-                <div className='sm:flex hidden justify-between items-center'>
-                  <p>{order.method}</p>
+                <div className='md:flex hidden justify-between items-center'>
+                  <p >{order.method}</p>
                   <button className='text-white bg-gradient-to-r from-blue-700 to-teal-500 hover:from-blue-700 hover:to-teal-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-large rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>Delete</button>
                 </div>
               </li>
