@@ -17,7 +17,7 @@ const Sidebar = ({ children }) => {
             </div>
           </Link>
           <Link href='/'>
-            <div className='text-white shrink-0 text-2xl text-bold md:p-3  rounded-lg md:inline-block'>
+            <div className='text-white shrink-0 text-2xl text-bold md:p-3  rounded-lg md:hidden'>
               <img src='https://www.genoshi.io/logo.svg' className='pt-3 pb-0  overflow-hidden w-14' alt='GRAFF' />
             </div>
           </Link>
